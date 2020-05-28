@@ -18,7 +18,6 @@ def main():
 
         try:
             texto = r.recognize_google(audio, language='es-ES')
-            time.sleep(1.5)
             print("Converted Audio is: \n" + texto)
             aux = translator.detect(texto)
             print(aux)
